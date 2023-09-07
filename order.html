@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Order Booking</title>
+</head>
+<style>
+    body{
+        color: black;
+        background-image: url(logo8.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+    }
+    footer{
+        background-color: aliceblue;
+    }
+    .container{
+        color:black;
+
+    }
+</style>
+<body>
+   <Center> 
+   <u><h1>Food Order Booking</h1></u> 
+    <form action="process_order.php" method="post">
+        <h2>Select Your Food Items:</h2>
+        
+       <h3> <label for="item1">Item 1 - Starters</label><br>
+        <li><a href="Starters.html">Click Here</a></li><br>
+        <label for="name">Name:</label><br>
+            <input type="text" name="customer_name" id="name" required>
+            <br>
+            <label for="name">Number:</label><br>
+        <input type="number" name="item1_quantity" id="item1" min="0">
+        
+        <br>
+        
+        <label for="item2">Item 2 - Veg</label><br>
+        <li><a href="vegtarian.html">Click Here</a></li><br>
+        <label for="name">Name:</label><br>
+            <input type="text" name="customer_name" id="name" required>
+            <br>
+            <label for="name">Number:</label><br>
+        <input type="number" name="item2_quantity" id="item2" min="0">
+        
+        
+        <br>
+        
+        <label for="item3">Item 3 - Non-veg</label><br>
+        <li><a href="Non-veg.html">Click Here</a></li><br>
+        <label for="name">Name:</label><br>
+            <input type="text" name="customer_name" id="name" required>
+            <br>
+            <label for="name">Number:</label><br>
+        <input type="number" name="item3_quantity" id="item3" min="0">
+        <br>
+
+        <label for="item3">Item 4 - Salads</label><br>
+        <li><a href="salads.html">Click Here</a></li><br>
+        <label for="name">Name:</label><br>
+            <input type="text" name="customer_name" id="name" required>
+            <br>
+            <label for="name">Number:</label><br>
+        <input type="number" name="item3_quantity" id="item3" min="0">
+        
+        <br>
+
+        <label for="item3">Item 5 - Drinks and Juices</label><br>
+        <li><a href="juices.html">Click Here</a></li><br>
+        <label for="name">Name:</label><br>
+            <input type="text" name="customer_name" id="name" required>
+            <br>
+            <label for="name">Number:</label><br>
+        <input type="number" name="item3_quantity" id="item3" min="0">
+    </h3>
+        <br>
+    </Center>
+        <center><h2>Contact Information:</h2></center>
+        
+        <center>
+            <div class="container"> 
+           <h3> <label for="name">Name:</label>
+        <input type="text" name="customer_name" id="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="customer_email" id="email" required>
+        <br>
+        <br>
+        <label for="Address">Address:</label>
+        <input type="Address" name="customer_address" id="address" required>
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="customer_phone" id="phone" required>
+        <br>
+        <br>
+        
+        <form method="get" action="success.html">
+            <button id="myButton">Place Order</button>
+    <p id="message" style="display:none;">Your order placed Successfully</p>
+
+    <script>
+        // Get the button and message elements by their IDs
+        var button = document.getElementById("myButton");
+        var message = document.getElementById("message");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function () {
+            // Display the message when the button is clicked
+            message.style.display = "block";
+        });
+    </script>
+        </form>
+       
+           </div>
+    </center>
+    </form>
+    <br>
+    <br>
+    <center><h3><footer>Copyright © 2020-2021 Sea View Restuarant.
+        All Rights are reserved</footer></h3></center>
+</body>
+</html>
